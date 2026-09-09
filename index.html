@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แพทย์แผนไทย เภสัชกรรมไทย บทที่ 3 สรรพคุณเภสัช (ตัวยารสทั้ง 10)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f9fafb;
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .modal-enter {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        .modal-enter-active {
+            opacity: 1;
+            transform: scale(1);
+            transition: opacity 300ms, transform 300ms;
+        }
+        .main-tab.active {
+            border-bottom-color: transparent;
+            background-color: #ffffff;
+            color: #166534;
+        }
+        .main-tab:not(.active) {
+            background-color: #f3f4f6;
+            color: #4b5563;
+            border-bottom-color: #e5e7eb;
+        }
+        .taste-btn.active {
+            background-color: #166534;
+            color: white;
+            border-color: #14532d;
+        }
+        .taste-btn:not(.active) {
+            background-color: white;
+            color: #374151;
+            border-color: #d1d5db;
+        }
+        .taste-btn:not(.active):hover {
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+<div class="min-h-screen flex flex-col">
+    <header class="bg-green-800 text-white p-6 shadow-md">
+        <div class="container mx-auto max-w-6xl">
+            <h1 class="text-3xl font-bold text-center">แพทย์แผนไทย เภสัชกรรมไทย</h1>
+            <h2 class="text-xl text-center mt-2 font-medium">บทที่ 3 สรรพคุณเภสัช</h2>
+        </div>
+    </header>
+
+    <div class="container mx-auto max-w-6xl px-4 mt-6 md:px-6 lg:px-8">
+        <div class="flex flex-wrap border-b border-gray-300">
+            <button id="tab-btn-theory" class="main-tab active px-6 py-3 font-bold text-lg rounded-t-lg border-t border-l border-r border-gray-300 focus:outline-none transition-colors mr-1">
+                ทฤษฎีสรรพคุณเภสัช
+            </button>
+            <button id="tab-btn-herbs" class="main-tab px-6 py-3 font-bold text-lg rounded-t-lg border-t border-l border-r border-gray-300 border-b focus:outline-none transition-colors hover:bg-gray-50">
+                รสยา 9 รส และสมุนไพร
+            </button>
+        </div>
+    </div>
+
+    <main class="flex-grow container mx-auto max-w-6xl p-4 md:p-6 lg:p-8 flex flex-col gap-6">
+        
+        <!-- Section 1: Theory Content (Fully Populated based on Chapter 3) -->
+        <section id="section-theory" class="block animate-fade-in">
+            <div class="bg-white rounded-xl shadow-lg p-6 lg:p-8 mb-6">
+                <h2 class="text-2xl font-bold text-green-800 mb-4 border-b border-green-200 pb-2">สรรพคุณเภสัช คืออะไร?</h2>
+                <p class="text-lg text-gray-700 leading-relaxed"><strong>สรรพคุณเภสัช</strong> คือ การรู้จักสรรพคุณของวัตถุที่จะนำมาใช้เป็นยารักษาโรค โดยการจำแนกรสยาสามารถแบ่งออกเป็น 2 ลักษณะหลักๆ คือ ยารสประธาน และ รสของตัวยา</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 lg:p-8 mb-6">
+                <h2 class="text-2xl font-bold text-green-800 mb-6 border-b border-green-200 pb-2">1. ยารสประธาน 3 รส</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-blue-50 rounded-lg p-5 border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-blue-700 mb-3 flex items-center">
+                            <span class="w-3 h-3 rounded-full bg-blue-500 mr-3"></span> รสเย็น
+                        </h3>
+                        <ul class="space-y-3 text-gray-700 text-sm md:text-base">
+                            <li class="flex items-start"><strong class="w-16 flex-shrink-0 text-gray-900">แก้:</strong> <span>เตโชธาตุ (ธาตุไฟ)</span></li>
+                            <li class="flex items-start"><strong class="w-16 flex-shrink-0 text-gray-900">ฤดู:</strong> <span>ฤดูร้อน</span></li>
+                            <li class="flex items-start"><strong class="w-16 flex-shrink-0 text-gray-900">ตำรับยา:</strong> <span>ยาเขียว, มหานิล, มหากาฬ</span></li>
+                            <li class="flex items-start"><strong class="w-16 flex-shrink-0 text-gray-900">ตัวอย่าง:</strong> <span>เขา, เขี้ยว, ใบไม้, กระดูก</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-50 rounded-lg p-5 border border-red-100 shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-red-700 mb-3 flex items-center">
+                            <span class="w-3 h-3 rounded-full bg-red-500 mr-3"></span> รสร้อน
+                        </h3>
+                        <ul class="space-y-3 text-gray-700 text-sm md:text-base">
+                            <li class="flex items-start"><strong class="w-16 flex-shrink-0 text-gray-900">แก้:</strong> <span>วาโยธาตุ (ธาตุลม)</span></li>
+                            <li class="flex items-start"><strong class="w-16 flex-shrink-0 text-gray-900">ฤดู:</strong> <span>ฤดูฝน</span></li>
+                            <li class="flex items-start"><strong class="w-16 flex-shrink-0 text-gray-900">ตำรับยา:</strong> <span>ประสะกานพลู, ธรณีสันฑฆาต, ไฟบรรลัยกัลป์, ประจุวาโย</span></li>
+                            <li class="flex items-start"><strong class="w-16 flex-shrink-0 text-gray-900">ตัวอย่าง:</strong> <span>ตรีกฎุก, เหง้าขิง, กะเพรา, เบญจกูล, พริกไทย, ดีปลี</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-purple-50 rounded-lg p-5 border border-purple-100 shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-purple-700 mb-3 flex items-center">
+                            <span class="w-3 h-3 rounded-full bg-purple-500 mr-3"></span> รสสุขุม
+                        </h3>
+                        <ul class="space-y-3 text-gray-700 text-sm md:text-base">
+                            <li class="flex items-start"><strong class="w-16 flex-shrink-0 text-gray-900">แก้:</strong> <span>อาโปธาตุ (ธาตุน้ำ)</span></li>
+                            <li class="flex items-start"><strong class="w-16 flex-shrink-0 text-gray-900">ฤดู:</strong> <span>ฤดูหนาว</span></li>
+                            <li class="flex items-start"><strong class="w-16 flex-shrink-0 text-gray-900">ตำรับยา:</strong> <span>ยาหอมทั้งหมด เช่น หอมเทพจิตร, อินทจักร, นวโกฐ, ทิพโอสถ, ยาสังขวิชัย</span></li>
+                            <li class="flex items-start"><strong class="w-16 flex-shrink-0 text-gray-900">ตัวอย่าง:</strong> <span>โกฐ (ยกเว้นโกฐพุงปลา), เทียน, กระวาน, ลูกจันทน์, ดอกจันทน์</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 lg:p-8 mb-6">
+                <h2 class="text-2xl font-bold text-green-800 mb-4 border-b border-green-200 pb-2">2. รสของตัวยา</h2>
+                <p class="mb-6 text-gray-700">ประกอบด้วย พืช (ต้น, เถา-เครือ, หัว-เหง้า, ผัก, หญ้า), สัตว์ (บก, น้ำ, อากาศ) และ ธาตุ (สลายตัวยาก-ง่าย)</p>
+                
+                <div class="mb-8 bg-gray-50 p-5 rounded-lg border border-gray-200">
+                    <h3 class="text-xl font-bold text-green-700 mb-4 border-l-4 border-green-600 pl-3">2.1 รสยา 4 รส (ตามคัมภีร์ธาตุวิภังค์)</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="bg-white p-4 rounded shadow-sm text-center border-b-2 border-orange-500"><strong class="text-orange-700 block mb-1 text-lg">ฝาด</strong> เนื้อ, เอ็น</div>
+                        <div class="bg-white p-4 rounded shadow-sm text-center border-b-2 border-red-500"><strong class="text-red-700 block mb-1 text-lg">เผ็ด</strong> ผิวหนัง, ขน</div>
+                        <div class="bg-white p-4 rounded shadow-sm text-center border-b-2 border-blue-500"><strong class="text-blue-700 block mb-1 text-lg">เค็ม</strong> เอ็น, กระดูกทั่วสรรพางค์กาย</div>
+                        <div class="bg-white p-4 rounded shadow-sm text-center border-b-2 border-lime-500"><strong class="text-lime-700 block mb-1 text-lg">เปรี้ยว</strong> เอ็นทั่วสรรพางค์กาย</div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-green-700 mb-4 border-l-4 border-green-600 pl-3">2.2 รสยา 6 รส (ตามคัมภีร์วรโยคสาร)</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm md:text-base text-gray-700 mb-5">
+                        <div class="bg-pink-50 p-3 rounded-r-lg border-l-4 border-pink-500 shadow-sm"><strong class="text-pink-700">หวาน (มธุระ):</strong> ชอบกับยาให้เจริญรสธาตุ</div>
+                        <div class="bg-lime-50 p-3 rounded-r-lg border-l-4 border-lime-500 shadow-sm"><strong class="text-lime-700">เปรี้ยว (อัมพิระ):</strong> แก้ ดี ลม เสลด, ที่ดิบทำให้สุก, ใช้ไม่เป็นเกิดโทษ</div>
+                        <div class="bg-blue-50 p-3 rounded-r-lg border-l-4 border-blue-500 shadow-sm"><strong class="text-blue-700">เค็ม (ลวณะ):</strong> เผาโทษ, เผาเขฬะ (ทำให้น้ำลายแห้ง), เจริญไฟธาตุ</div>
+                        <div class="bg-red-50 p-3 rounded-r-lg border-l-4 border-red-500 shadow-sm"><strong class="text-red-700">เผ็ด (กฏกะ):</strong> ทำให้กำลังน้อย ระงับเกียจคร้าน, พิษไม่ให้เจริญ, บำรุงไฟธาตุ ให้อาหารสุก</div>
+                        <div class="bg-green-50 p-3 rounded-r-lg border-l-4 border-green-600 shadow-sm"><strong class="text-green-700">ขม (ติตติกะ):</strong> แก้ ร้อน, กระหายน้ำ, ทำให้มูตรคูถบริสุทธิ์, เจริญอาหาร</div>
+                        <div class="bg-orange-50 p-3 rounded-r-lg border-l-4 border-orange-500 shadow-sm"><strong class="text-orange-700">ฝาด (กะสาวะ):</strong> แก้ กระหายน้ำ, เจริญผิวกาย และเนื้อ</div>
+                    </div>
+                    <div class="bg-yellow-50 p-5 rounded-lg border border-yellow-200">
+                        <strong class="text-yellow-800 text-lg block mb-3 flex items-center">คุณสมบัติของยาแต่ละรส ให้แสลงกับโรค:</strong>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-white p-3 rounded shadow-sm border border-yellow-100"><strong>ลมกำเริบ:</strong> <span class="text-gray-600">เผ็ด, ขม, ฝาด</span></div>
+                            <div class="bg-white p-3 rounded shadow-sm border border-yellow-100"><strong>ดีกำเริบ:</strong> <span class="text-gray-600">เผ็ด, เปรี้ยว, เค็ม</span></div>
+                            <div class="bg-white p-3 rounded shadow-sm border border-yellow-100"><strong>เสลดกำเริบ:</strong> <span class="text-gray-600">หวาน, เปรี้ยว, เค็ม</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-green-700 mb-4 border-l-4 border-green-600 pl-3">2.3 รสยา 8 รส (ตามคัมภีร์ธาตุนิวรณ์)</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-gray-700 text-center">
+                        <div class="bg-gray-50 p-3 rounded shadow-sm border border-gray-100"><span class="font-bold text-green-700 block mb-1">ขม</span> ผิวหนัง</div>
+                        <div class="bg-gray-50 p-3 rounded shadow-sm border border-gray-100"><span class="font-bold text-orange-700 block mb-1">ฝาด</span> เนื้อ (มังสา)</div>
+                        <div class="bg-gray-50 p-3 rounded shadow-sm border border-gray-100"><span class="font-bold text-blue-700 block mb-1">เค็ม</span> เส้นเอ็น</div>
+                        <div class="bg-gray-50 p-3 rounded shadow-sm border border-gray-100"><span class="font-bold text-red-700 block mb-1">เผ็ดร้อน</span> กระดูก</div>
+                        <div class="bg-gray-50 p-3 rounded shadow-sm border border-gray-100"><span class="font-bold text-pink-600 block mb-1">หวาน</span> ลำไส้ใหญ่</div>
+                        <div class="bg-gray-50 p-3 rounded shadow-sm border border-gray-100"><span class="font-bold text-lime-600 block mb-1">เปรี้ยว</span> ลำไส้น้อย</div>
+                        <div class="bg-gray-50 p-3 rounded shadow-sm border border-gray-100"><span class="font-bold text-teal-500 block mb-1">เย็นหอม</span> หัวใจ</div>
+                        <div class="bg-gray-50 p-3 rounded shadow-sm border border-gray-100"><span class="font-bold text-amber-600 block mb-1">มัน</span> ข้อต่อ</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 lg:p-8 mb-6">
+                <h2 class="text-2xl font-bold text-green-800 mb-6 border-b border-green-200 pb-2">การแก้ธาตุตามรสยา</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-red-50 p-6 rounded-xl border border-red-100 shadow-sm">
+                        <h3 class="text-xl font-bold text-red-700 mb-4">รสยา แก้เตโชธาตุ (ธาตุไฟ)</h3>
+                        <ul class="space-y-3 text-gray-800 text-lg">
+                            <li class="flex items-center bg-white p-3 rounded shadow-sm"><span class="font-bold text-orange-700 w-24">ฝาด</span> <span class="text-red-500 font-medium">แสลง</span></li>
+                            <li class="flex items-center bg-white p-3 rounded shadow-sm"><span class="font-bold text-red-700 w-24">เผ็ดร้อน</span> <span class="text-green-600 font-medium">บำรุง</span></li>
+                            <li class="flex items-center bg-white p-3 rounded shadow-sm"><span class="font-bold text-gray-600 w-24">จืด</span> <span class="text-blue-600 font-medium">แก้</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 shadow-sm">
+                        <h3 class="text-xl font-bold text-blue-700 mb-4">รสยา แก้อาโปธาตุ (ธาตุน้ำ)</h3>
+                        <ul class="space-y-2 text-gray-800">
+                            <li class="flex bg-white p-2 rounded shadow-sm"><span class="font-bold text-purple-700 w-1/3">เมาเบื่อ</span> <span class="text-blue-600 font-medium w-2/3">แก้</span></li>
+                            <li class="flex bg-white p-2 rounded shadow-sm"><span class="font-bold w-1/3">เปรี้ยว, มัน, เผ็ดร้อน</span> <span class="text-red-500 font-medium w-2/3">แสลงไข้</span></li>
+                            <li class="flex bg-white p-2 rounded shadow-sm"><span class="font-bold w-1/3">มัน, ฝาด, เมาเบื่อ</span> <span class="text-red-500 font-medium w-2/3">แสลงไอ</span></li>
+                            <li class="flex bg-white p-2 rounded shadow-sm"><span class="font-bold w-1/3">หอมเย็น, ขม</span> <span class="text-red-500 font-medium w-2/3">แสลงจุกเสียด</span></li>
+                            <li class="flex bg-white p-2 rounded shadow-sm"><span class="font-bold w-1/3">ขม, เมาเบื่อ</span> <span class="text-red-500 font-medium w-2/3">แสลงหัวใจพิการ</span></li>
+                            <li class="flex bg-white p-2 rounded shadow-sm"><span class="font-bold w-1/3">เปรี้ยว, หวาน</span> <span class="text-red-500 font-medium w-2/3">แสลงน้ำเหลืองเสีย</span></li>
+                            <li class="flex bg-white p-2 rounded shadow-sm"><span class="font-bold w-1/3">ขม, เผ็ดร้อน</span> <span class="text-green-600 font-medium w-2/3">ช่วยย่อยอาหาร</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Section: 3 รสยาประจำธาตุ / 4 ตามวัย / 5 ตามฤดู / 6 ตามกาล -->
+            <div class="bg-white rounded-xl shadow-lg p-6 lg:p-8 mb-6">
+                <h2 class="text-2xl font-bold text-green-800 mb-1 border-b border-green-200 pb-2">3. รสยาประจำธาตุ</h2>
+                <p class="text-sm text-gray-500 mb-5 mt-2">ใช้กินเมื่อธาตุใดธาตุหนึ่งพิการ — รสที่บำรุง/แก้ธาตุนั้น</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="bg-amber-50 rounded-xl p-5 border border-amber-200 text-center">
+                        <div class="text-3xl mb-2">🪨</div>
+                        <h3 class="font-bold text-amber-900 text-lg">ปฐวีธาตุ (ดิน)</h3>
+                        <p class="text-xs text-amber-700 mb-3">ธาตุดิน 20 ประการ</p>
+                        <div class="flex flex-wrap justify-center gap-1.5">
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-amber-300 text-amber-800 text-xs font-semibold">ฝาด</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-amber-300 text-amber-800 text-xs font-semibold">หวาน</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-amber-300 text-amber-800 text-xs font-semibold">มัน</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-amber-300 text-amber-800 text-xs font-semibold">เค็ม</span>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-5 border border-blue-200 text-center">
+                        <div class="text-3xl mb-2">💧</div>
+                        <h3 class="font-bold text-blue-900 text-lg">อาโปธาตุ (น้ำ)</h3>
+                        <p class="text-xs text-blue-700 mb-3">ธาตุน้ำ 12 ประการ</p>
+                        <div class="flex flex-wrap justify-center gap-1.5">
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-blue-300 text-blue-800 text-xs font-semibold">เปรี้ยว</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-blue-300 text-blue-800 text-xs font-semibold">ขม</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-blue-300 text-blue-800 text-xs font-semibold">เมาเบื่อ</span>
+                        </div>
+                    </div>
+                    <div class="bg-red-50 rounded-xl p-5 border border-red-200 text-center">
+                        <div class="text-3xl mb-2">🌬️</div>
+                        <h3 class="font-bold text-red-900 text-lg">วาโยธาตุ (ลม)</h3>
+                        <p class="text-xs text-red-700 mb-3">ธาตุลม 6 ประการ</p>
+                        <div class="flex flex-wrap justify-center gap-1.5">
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-red-300 text-red-800 text-xs font-semibold">สุขุม</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-red-300 text-red-800 text-xs font-semibold">เผ็ดร้อน</span>
+                        </div>
+                    </div>
+                    <div class="bg-orange-50 rounded-xl p-5 border border-orange-200 text-center">
+                        <div class="text-3xl mb-2">🔥</div>
+                        <h3 class="font-bold text-orange-900 text-lg">เตโชธาตุ (ไฟ)</h3>
+                        <p class="text-xs text-orange-700 mb-3">ธาตุไฟ 4 ประการ</p>
+                        <div class="flex flex-wrap justify-center gap-1.5">
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-orange-300 text-orange-800 text-xs font-semibold">เย็น</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-orange-300 text-orange-800 text-xs font-semibold">จืด</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 lg:p-8 mb-6">
+                <h2 class="text-2xl font-bold text-green-800 mb-5 border-b border-green-200 pb-2">4. รสยาแก้ตามวัย</h2>
+                <div class="space-y-3">
+                    <div class="bg-pink-50 rounded-xl p-4 border-l-4 border-pink-400 flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                        <span class="text-2xl">👶</span>
+                        <div class="md:w-44"><strong class="text-pink-900">ปฐมวัย</strong><p class="text-xs text-pink-700">แรกเกิด – 16 ปี</p></div>
+                        <div class="flex-1 text-sm text-gray-700"><strong>สมุฎฐาน:</strong> อาโป → เสมหะ</div>
+                        <div class="flex gap-1.5 flex-wrap">
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-pink-300 text-pink-800 text-xs font-semibold">หวาน</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-pink-300 text-pink-800 text-xs font-semibold">เปรี้ยว</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-pink-300 text-pink-800 text-xs font-semibold">ขม</span>
+                        </div>
+                    </div>
+                    <div class="bg-indigo-50 rounded-xl p-4 border-l-4 border-indigo-400 flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                        <span class="text-2xl">🧑</span>
+                        <div class="md:w-44"><strong class="text-indigo-900">มัชฌิมวัย</strong><p class="text-xs text-indigo-700">16 – 32 ปี</p></div>
+                        <div class="flex-1 text-sm text-gray-700"><strong>สมุฎฐาน:</strong> อาโป → โลหิต + ดี</div>
+                        <div class="flex gap-1.5 flex-wrap">
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-indigo-300 text-indigo-800 text-xs font-semibold">เปรี้ยวฝาด</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-indigo-300 text-indigo-800 text-xs font-semibold">เปรี้ยวเค็ม</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-indigo-300 text-indigo-800 text-xs font-semibold">ขม</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-xl p-4 border-l-4 border-gray-500 flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                        <span class="text-2xl">👴</span>
+                        <div class="md:w-44"><strong class="text-gray-900">ปัจฉิมวัย</strong><p class="text-xs text-gray-600">32 – 64 ปี</p></div>
+                        <div class="flex-1 text-sm text-gray-700"><strong>สมุฎฐาน:</strong> วาโย + อาโปแทรก → เสมหะ + เหงื่อแทรก</div>
+                        <div class="flex gap-1.5 flex-wrap">
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-gray-300 text-gray-800 text-xs font-semibold">ร้อน</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-gray-300 text-gray-800 text-xs font-semibold">ขม</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-gray-300 text-gray-800 text-xs font-semibold">เค็ม</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-gray-300 text-gray-800 text-xs font-semibold">หอม</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-gray-300 text-gray-800 text-xs font-semibold">ฝาด</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 bg-green-50 border border-green-200 rounded-xl p-3 text-center text-sm font-semibold text-green-800">
+                    ✅ รสขม ใช้ได้กับทุกวัย
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 lg:p-8 mb-6">
+                <h2 class="text-2xl font-bold text-green-800 mb-5 border-b border-green-200 pb-2">5. รสยาแก้ตามฤดู</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-orange-50 rounded-xl p-5 border border-orange-200 text-center">
+                        <div class="text-3xl mb-2">☀️</div>
+                        <h3 class="font-bold text-orange-800">ฤดูร้อน · คิมหันตฤดู</h3>
+                        <p class="text-xs text-orange-700 mt-1 mb-3">เตโช-ปิตะพิการ</p>
+                        <div class="flex justify-center gap-1.5">
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-orange-300 text-orange-800 text-xs font-semibold">เย็น</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-orange-300 text-orange-800 text-xs font-semibold">จืด</span>
+                        </div>
+                    </div>
+                    <div class="bg-sky-50 rounded-xl p-5 border border-sky-200 text-center">
+                        <div class="text-3xl mb-2">🌧️</div>
+                        <h3 class="font-bold text-sky-800">ฤดูฝน · วสันตฤดู</h3>
+                        <p class="text-xs text-sky-700 mt-1 mb-3">วาโย-วาตะพิการ</p>
+                        <div class="flex justify-center gap-1.5">
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-sky-300 text-sky-800 text-xs font-semibold">สุขุม</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-sky-300 text-sky-800 text-xs font-semibold">ร้อน</span>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-5 border border-blue-200 text-center">
+                        <div class="text-3xl mb-2">❄️</div>
+                        <h3 class="font-bold text-blue-800">ฤดูหนาว · เหมันตฤดู</h3>
+                        <p class="text-xs text-blue-700 mt-1 mb-3">อาโป-เสมหะพิการ</p>
+                        <div class="flex justify-center gap-1.5">
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-blue-300 text-blue-800 text-xs font-semibold">สุขุม</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white border border-blue-300 text-blue-800 text-xs font-semibold">เปรี้ยว</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 lg:p-8 mb-6">
+                <h2 class="text-2xl font-bold text-green-800 mb-1 border-b border-green-200 pb-2">6. รสยาแก้ตามกาล</h2>
+                <p class="text-sm text-gray-600 mt-2 mb-5 leading-relaxed">คนไข้ควรได้รับประทานยาได้ทัน หรือให้ตรงกับสมุฎฐานของโรคในกาลนั้น ๆ</p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="rounded-xl border border-gray-200 overflow-hidden">
+                        <div class="bg-emerald-700 text-white px-4 py-2 font-bold text-sm">กาล 3 — กลางวันแบ่ง 3 ยาม / กลางคืนแบ่ง 3 ยาม (พิกัดโรค : รสน้ำกระสายยา)</div>
+                        <table class="w-full text-sm">
+                            <thead><tr class="bg-gray-50 text-left text-gray-600 text-xs uppercase"><th class="px-3 py-2">ยาม</th><th class="px-3 py-2">เวลากลางวัน</th><th class="px-3 py-2">เวลากลางคืน</th><th class="px-3 py-2">พิกัดโรค</th><th class="px-3 py-2">รสกระสาย</th></tr></thead>
+                            <tbody>
+                                <tr class="border-t"><td class="px-3 py-2 font-bold">1</td><td class="px-3 py-2">06.00–10.00 น.</td><td class="px-3 py-2">18.00–22.00 น.</td><td class="px-3 py-2">เสมหะ</td><td class="px-3 py-2 font-bold text-rose-700">เปรี้ยว</td></tr>
+                                <tr class="border-t"><td class="px-3 py-2 font-bold">2</td><td class="px-3 py-2">10.00–14.00 น.</td><td class="px-3 py-2">22.00–02.00 น.</td><td class="px-3 py-2">โลหิต + ดี</td><td class="px-3 py-2 font-bold text-emerald-700">ขม</td></tr>
+                                <tr class="border-t"><td class="px-3 py-2 font-bold">3</td><td class="px-3 py-2">14.00–18.00 น.</td><td class="px-3 py-2">02.00–06.00 น.</td><td class="px-3 py-2">ลม</td><td class="px-3 py-2 font-bold text-red-600">ร้อน</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 overflow-hidden">
+                        <div class="bg-emerald-700 text-white px-4 py-2 font-bold text-sm">กาล 4 — กลางวันแบ่ง 4 ยาม / กลางคืนแบ่ง 4 ยาม (สมุฎฐาน : พิกัดโรค)</div>
+                        <table class="w-full text-sm">
+                            <thead><tr class="bg-gray-50 text-left text-gray-600 text-xs uppercase"><th class="px-3 py-2">ยาม</th><th class="px-3 py-2">เวลากลางวัน</th><th class="px-3 py-2">เวลากลางคืน</th><th class="px-3 py-2">สมุฎฐาน</th><th class="px-3 py-2">พิกัดโรค</th></tr></thead>
+                            <tbody>
+                                <tr class="border-t"><td class="px-3 py-2 font-bold">1</td><td class="px-3 py-2">06.00–09.00 น.</td><td class="px-3 py-2">18.00–21.00 น.</td><td class="px-3 py-2">อาโป</td><td class="px-3 py-2">เสมหะ</td></tr>
+                                <tr class="border-t"><td class="px-3 py-2 font-bold">2</td><td class="px-3 py-2">09.00–12.00 น.</td><td class="px-3 py-2">21.00–24.00 น.</td><td class="px-3 py-2">อาโป</td><td class="px-3 py-2">โลหิต</td></tr>
+                                <tr class="border-t"><td class="px-3 py-2 font-bold">3</td><td class="px-3 py-2">12.00–15.00 น.</td><td class="px-3 py-2">00.00–03.00 น.</td><td class="px-3 py-2">อาโป</td><td class="px-3 py-2">ดี</td></tr>
+                                <tr class="border-t"><td class="px-3 py-2 font-bold">4</td><td class="px-3 py-2">15.00–18.00 น.</td><td class="px-3 py-2">03.00–06.00 น.</td><td class="px-3 py-2">วาโย</td><td class="px-3 py-2">วาตะ (ลม)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="section-herbs" class="hidden flex-col md:flex-row gap-6 animate-fade-in w-full">
+            <!-- Sidebar / Navigation -->
+            <aside class="md:w-1/3 lg:w-1/4 flex-shrink-0 w-full">
+                <div class="bg-white rounded-xl shadow-lg p-4 sticky top-6 border border-gray-100">
+                    <h3 class="text-lg font-bold mb-4 text-green-900 border-b pb-2">2.4 รสยา 9 รส + จืด</h3>
+                    <nav id="taste-nav" class="flex flex-col space-y-2"></nav>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <div class="md:w-2/3 lg:w-3/4 w-full">
+                <div id="taste-content" class="bg-white rounded-xl shadow-lg p-6 lg:p-8 min-h-[500px] border border-gray-100">
+                    <!-- Default State -->
+                    <div class="flex flex-col items-center justify-center h-full text-gray-400 space-y-4 py-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg>
+                        <p class="text-xl font-medium text-center">กรุณาคลิกเลือก รสยา ทางด้านซ้าย<br>เพื่อดูสรรพคุณและรายการสมุนไพร</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<div id="herb-modal" class="fixed inset-0 z-50 hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <!-- Background overlay -->
+        <div id="modal-overlay" class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity opacity-0" aria-hidden="true"></div>
+
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+        <!-- Modal panel -->
+        <div id="modal-panel" class="inline-block align-bottom bg-white rounded-2xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg w-full modal-enter">
+            <div class="bg-white">
+                <div class="relative">
+                    <img id="modal-image" src="" alt="Herb image" class="w-full h-64 object-cover">
+                    <button id="close-modal-top" class="absolute top-4 right-4 bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-70 transition-all focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 pt-12">
+                        <span id="modal-taste" class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2"></span>
+                        <h3 class="text-3xl leading-6 font-bold text-white mb-1" id="modal-title">ชื่อสมุนไพร</h3>
+                        <p id="modal-part" class="text-gray-300 text-sm">ส่วนที่ใช้: </p>
+                    </div>
+                </div>
+                <div class="px-6 py-6">
+                    <div class="mt-2">
+                        <h4 class="text-lg font-bold text-gray-900 mb-2 border-b pb-1">สรรพคุณ:</h4>
+                        <p id="modal-properties" class="text-base text-gray-700 leading-relaxed"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-4 sm:px-6 sm:flex sm:flex-row-reverse border-t border-gray-200">
+                <button type="button" id="close-modal-btn" class="w-full inline-flex justify-center rounded-xl border border-transparent shadow-sm px-6 py-3 bg-green-700 text-base font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm transition-colors">
+                    ปิดหน้าต่าง
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // ข้อมูลตัวยารส 9 รส + จืด — ถอดจากบทความ วาโย ฟาร์ม: แพทย์แผนไทย เภสัชกรรมไทย บทที่ 3 สรรพคุณเภสัช
+    const tastesData = [
+  {
+    "id": "astringent",
+    "name": "รสฝาด",
+    "color": "bg-orange-100",
+    "textColor": "text-orange-800",
+    "badgeClass": "bg-orange-500 text-white",
+    "properties": "สมานแผลภายใน-ภายนอก แผลสด เปื่อย กัดเนื้อร้าย แก้โรคบิด ท้องร่วง แก้อุจจาระธาตุพิการ คุมธาตุ",
+    "contraindications": "โรคลม พรรดึก ท้องผูก เตโชธาตุพิการ (ธาตุไฟ)",
+    "herbs": [
+      {
+        "name": "ขี้อาย",
+        "part": "เปลือกต้น",
+        "props": "อุจจาระเป็นฟอง ท้องร่วง บิดเรื้อรัง ปวดแบ่ง คุมธาตุ ชะล้างบาดแผล",
+        "group": "เปลือก 4 อย่าง",
+        "image": "herbimg/ขี้อาย.jpg"
+      },
+      {
+        "name": "เพกา",
+        "part": "เปลือกต้น",
+        "props": "ดับพิษโลหิต แก้น้ำเหลืองเสีย สมานบาดแผล ขับเลือดเน่าในเรือนไฟ",
+        "group": "เปลือก 4 อย่าง",
+        "image": "herbimg/เพกา.jpg"
+      },
+      {
+        "name": "นนทรี",
+        "part": "เปลือกต้น",
+        "props": "กล่อมเสมหะและโลหิต บิดมูกเลือด ปิดธาตุ สมานบาดแผล ขับประจำเดือน รัดมดลูก ขับลมผาย แก้ท้องร่วง",
+        "group": "เปลือก 4 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2014/03/นนทรี.jpg"
+      },
+      {
+        "name": "มังคุด",
+        "part": "เปลือกผล",
+        "props": "สมานบาดแผล บิด ลงท้อง ท้องเดิน ล้างแผล",
+        "group": "เปลือก 4 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2013/07/Mangosteen-1.jpg"
+      },
+      {
+        "name": "ทับทิม",
+        "part": "ทั้ง 5",
+        "props": "ท้องร่วง บิดมูกเลือด ปิดธาตุ สมานบาดแผล",
+        "group": "ใช้ทั้ง 5",
+        "image": "https://medthai.com/wp-content/uploads/2013/07/Pomegranate-1.jpg"
+      },
+      {
+        "name": "ฝรั่ง",
+        "part": "ทั้ง 5",
+        "props": "ถอนพิษบาดแผล ท้องร่วง บิดมูกเลือด ปวดเบ่ง",
+        "group": "ใช้ทั้ง 5",
+        "image": "https://medthai.com/wp-content/uploads/2013/07/Guava-1.jpg"
+      },
+      {
+        "name": "เบญกานี",
+        "part": "ลูก",
+        "props": "บิดปวดเบ่ง ปิดธาตุ แก้ท้องร่วง แก้ปวดมดลูก สมานบาดแผล",
+        "group": "กลุ่มลูก",
+        "image": "herbimg/เบญกานี.jpg"
+      },
+      {
+        "name": "สมอพิเภกแก่",
+        "part": "ลูก",
+        "props": "ไข้ ริดสีดวง บิด โรคตา",
+        "group": "กลุ่มลูก",
+        "image": "herbimg/สมอพิเภกแก่.jpg"
+      },
+      {
+        "name": "กราย",
+        "part": "ลูก",
+        "props": "บิดปวดเบ่ง เสมหะเป็นพิษ คุมธาตุ สมานบาดแผล ท้องร่วง",
+        "group": "กลุ่มลูก"
+      },
+      {
+        "name": "สีเสียด (เทศ/ไทย)",
+        "part": "ยาง/เนื้อไม้ (ทั้ง 2)",
+        "props": "สมานบาดแผล คุมธาตุ ท้องร่วง บิด ลงแดง อติสาร ล้างบาดแผลที่ถูกไฟ และโรคผิวหนัง",
+        "group": "สีเสียดทั้ง 2",
+        "image": "herbimg/สีเสียดเทศไทย.jpg"
+      }
+    ]
+  },
+  {
+    "id": "sweet",
+    "name": "รสหวาน",
+    "color": "bg-pink-100",
+    "textColor": "text-pink-800",
+    "badgeClass": "bg-pink-500 text-white",
+    "properties": "ซึมซาบไปตามเนื้อ ร่างกายชุ่มชื้น บำรุงกล้ามเนื้อ กำลัง หัวใจ เจริญอาหาร แก้อ่อนเพลีย ไอ เสมหะแห้ง หอบ",
+    "contraindications": "ฟันผุ เสมหะเฟื่อง อาเจียน เบาหวาน น้ำเหลืองเสีย บาดแผล",
+    "herbs": [
+      {
+        "name": "คำไทย",
+        "part": "ดอก",
+        "props": "บำรุงโลหิต แสบร้อนคันตามผิวหนัง บิด ไตพิการ",
+        "group": "ดอกคำ 2 อย่าง",
+        "image": "herbimg/คำไทย.jpg"
+      },
+      {
+        "name": "คำฝอย",
+        "part": "ดอก",
+        "props": "แสบร้อนตามผิวหนัง บำรุงหัวใจ ประสาท โลหิตและน้ำเหลืองให้เป็นปกติ ขับระดู",
+        "group": "ดอกคำ 2 อย่าง",
+        "image": "herbimg/คำฝอย.jpg"
+      },
+      {
+        "name": "ชะเอมจีน (ชะเอมเทศ)",
+        "part": "ราก",
+        "props": "ขับเลือดเน่า บำรุงหัวใจให้ชุ่มชื่น แก้กำเดา น้ำลายเหนียว",
+        "group": "ชะเอม 2 อย่าง",
+        "image": "herbimg/ชะเอมจีนชะเอมเทศ.jpg"
+      },
+      {
+        "name": "ชะเอมไทย",
+        "part": "ราก",
+        "props": "แก้โรคในคอ ลม รัตตะปิตตะโรค",
+        "group": "ชะเอม 2 อย่าง",
+        "image": "herbimg/ชะเอมไทย.jpg"
+      },
+      {
+        "name": "ตาลโตนด",
+        "part": "งวง",
+        "props": "บิดปวดเบ่ง ปิดธาตุ ท้องร่วง ปวดมดลูก สมานบาดแผล",
+        "group": "ตาล 2 อย่าง"
+      },
+      {
+        "name": "ตานหม่อน",
+        "part": "ผลอ่อน",
+        "props": "พิษตานซาง ขับไส้เดือน บำรุงเนื้อหนังให้ชุ่มชื่น คุมธาตุ",
+        "group": "ตาล 2 อย่าง"
+      },
+      {
+        "name": "อ้อย (น้ำอ้อย)",
+        "part": "ลำต้น/น้ำ",
+        "props": "พิษตานซาง ขับไส้เดือน บำรุงเนื้อหนังให้ชุ่มชื่น คุมธาตุ",
+        "group": "ผลไม้/น้ำหวาน"
+      },
+      {
+        "name": "สับปะรด",
+        "part": "เหง้า",
+        "props": "ขับปัสสาวะ แก้ปัสสาวะพิการ นิ่ว หนองใน ขับระดูขาว",
+        "group": "ผลไม้/น้ำหวาน",
+        "image": "herbimg/สับปะรด.jpg"
+      },
+      {
+        "name": "มะพร้าว",
+        "part": "รากและดอก",
+        "props": "ลงท้อง อ่อนเพลีย ปากเปื่อย ไข้ตานซาง ไข้กำเดา",
+        "group": "ผลไม้/น้ำหวาน",
+        "image": "https://medthai.com/wp-content/uploads/2013/07/Coconut-1.jpg"
+      },
+      {
+        "name": "อังกาบ",
+        "part": "ดอก",
+        "props": "แก้สตรีระดูขัด ไข้ บำรุงไฟธาตุ",
+        "group": "ดอกอังกาบ"
+      }
+    ]
+  },
+  {
+    "id": "intoxicating",
+    "name": "รสเมาเบื่อ",
+    "color": "bg-purple-100",
+    "textColor": "text-purple-800",
+    "badgeClass": "bg-purple-500 text-white",
+    "properties": "แก้พิษ ดี เสมหะ โลหิต ไข้ สัตว์กัดต่อย แก้โรคทางอาโปธาตุ (ธาตุน้ำ) แก้พยาธิ ผื่นคัน",
+    "contraindications": "โรคหัวใจพิการ ไอ",
+    "herbs": [
+      {
+        "name": "กระท่อม",
+        "part": "ใบ",
+        "props": "รสเมาเบื่อขมฝาด — บิดปวดมวน ปวดท้อง ท้องร่วง ปวดเมื่อยตามร่างกาย",
+        "group": "ขึ้นต้น ก 4 อย่าง"
+      },
+      {
+        "name": "กัญชา",
+        "part": "ใบ/ยอด",
+        "props": "เจริญอาหาร ชูกำลัง ทำให้ใจขลาดกลัว (ยาเสพติดให้โทษ ใช้ทางการแพทย์เท่านั้น)",
+        "group": "ขึ้นต้น ก 4 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2015/06/สมุนไพรกัญชา.jpg"
+      },
+      {
+        "name": "กระไดลิง",
+        "part": "เถา",
+        "props": "พิษทั้งปวง ไข้เซื่องซึม ขับเหงื่อ",
+        "group": "ขึ้นต้น ก 4 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2015/08/บันไดลิง.jpg"
+      },
+      {
+        "name": "กระเบียน–กระเบา",
+        "part": "ลูก",
+        "props": "ฆ่าพยาธิ กลากเกลื้อน แก้มะเร็ง คุดทะราด โรคเรื้อน กุฏฐัง",
+        "group": "ขึ้นต้น ก 4 อย่าง"
+      },
+      {
+        "name": "สะแก",
+        "part": "ทั้ง 5",
+        "props": "ขับพยาธิและไส้เดือน โรคตานขโมย ฝีตานซาง",
+        "group": "ขึ้นต้น สะ 2 อย่าง"
+      },
+      {
+        "name": "สะบ้า (เผา)",
+        "part": "เมล็ดเผา",
+        "props": "พิษไข้ ทาแก้พยาธิทั้งปวง",
+        "group": "ขึ้นต้น สะ 2 อย่าง"
+      },
+      {
+        "name": "ขันทองพยาบาท",
+        "part": "ราก",
+        "props": "พิษลม ประดง พยาธิต่าง ๆ",
+        "group": "กลุ่มทอง 2 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2014/02/ขันทองพยาบาท.jpg"
+      },
+      {
+        "name": "ทองพันชั่ง",
+        "part": "ราก",
+        "props": "กลากเกลื้อน ผื่นคัน ดับพิษไข้ โรคผิวหนัง มะเร็ง",
+        "group": "กลุ่มทอง 2 อย่าง",
+        "image": "herbimg/ทองพันชั่ง.jpg"
+      },
+      {
+        "name": "ชุมเห็ดเทศ",
+        "part": "ทั้ง 5",
+        "props": "รสเบื่อเอียน — ขับพยาธิในลำไส้ รู้ถ่ายเองปิดเอง โรคผิวหนังทุกชนิด",
+        "group": "ชุมเห็ดเทศ",
+        "image": "https://medthai.com/wp-content/uploads/2014/03/ชุมเห็ดเทศ.jpg"
+      },
+      {
+        "name": "ลำโพง",
+        "part": "ใบ",
+        "props": "รสเมา — พิษฝี ปวด บวม อักเสบ หอบหืด",
+        "group": "ลำโพง (พิษแรง)"
+      },
+      {
+        "name": "ลำโพง",
+        "part": "ดอก",
+        "props": "รสเมาหวาน — หอบหืด",
+        "group": "ลำโพง (พิษแรง)"
+      },
+      {
+        "name": "ลำโพง",
+        "part": "เมล็ด",
+        "props": "รสเมามัน — ไข้พิษ ไข้ที่ทำให้กระสับกระส่าย (ต้องทำให้น้ำมันในเมล็ดหมดก่อน)",
+        "group": "ลำโพง (พิษแรง)"
+      },
+      {
+        "name": "ลำโพง",
+        "part": "น้ำมันจากเมล็ด",
+        "props": "รสเมาเบื่อ — กลากเกลื้อน หิด เหา",
+        "group": "ลำโพง (พิษแรง)"
+      },
+      {
+        "name": "ลำโพง",
+        "part": "ราก",
+        "props": "รสเมาหวาน — พิษกาฬทั้งปวง ดับพิษร้อน ปวด บวม อักเสบ ไข้พิษเซื่องซึม พยาธิ",
+        "group": "ลำโพง (พิษแรง)"
+      }
+    ]
+  },
+  {
+    "id": "bitter",
+    "name": "รสขม",
+    "color": "bg-green-100",
+    "textColor": "text-green-800",
+    "badgeClass": "bg-green-600 text-white",
+    "properties": "แก้โลหิต ดี กำเดา ไข้ต่าง ๆ ตัวร้อน จับสั่น บำรุงน้ำดี เจริญอาหาร ช่วยย่อยอาหาร",
+    "contraindications": "โรคหัวใจพิการ โรคลม จุกเสียด แน่นเฟ้อ",
+    "herbs": [
+      {
+        "name": "บอระเพ็ด",
+        "part": "เถา",
+        "props": "รสขมเย็น — ไข้ เสมหะ โลหิต บำรุงน้ำดี เจริญอาหาร เป็นยาอายุวัฒนะ",
+        "group": "เถา 4 อย่าง",
+        "image": "herbimg/บอระเพ็ด.jpg"
+      },
+      {
+        "name": "มะระ",
+        "part": "เถา",
+        "props": "รสขมเย็น — ไข้ กระหายน้ำ บำรุงน้ำดี",
+        "group": "เถา 4 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2013/07/Bitter-melon-1.jpg"
+      },
+      {
+        "name": "ชิงช้าชาลี",
+        "part": "เถา",
+        "props": "ไข้ ไข้เหนืออันเกิดแต่โลหิต สะอึก ร้อนในกระหายน้ำ ขับน้ำย่อยอาหาร บำรุงกำลัง ไฟธาตุ เจริญอาหาร ทำให้เลือดในกายเย็น",
+        "group": "เถา 4 อย่าง",
+        "image": "herbimg/ชิงช้าชาลี.jpg"
+      },
+      {
+        "name": "ขี้กาแดง",
+        "part": "เถา",
+        "props": "บำรุงน้ำดี ถ่ายล้างเสมหะให้ตก ดับพิษเสมหะและโลหิต",
+        "group": "เถา 4 อย่าง"
+      },
+      {
+        "name": "กระดอม",
+        "part": "ลูก",
+        "props": "ไข้ บำรุงน้ำดี ให้เจริญอาหาร",
+        "group": "ลูก 2 อย่าง",
+        "image": "herbimg/กระดอม.jpg"
+      },
+      {
+        "name": "ประคำดีควาย",
+        "part": "ลูก",
+        "props": "กาฬภายใน ดับพิษตานซาง",
+        "group": "ลูก 2 อย่าง"
+      },
+      {
+        "name": "มะกาเครือ (สะไอเครือ)",
+        "part": "เถา/เครือ",
+        "props": "เสมหะเป็นพิษ บิด พยาธิ ปวดเบ่ง ขับเสมหะ ขับฟอกโลหิตระดู",
+        "group": "เครือ 2 อย่าง"
+      },
+      {
+        "name": "มะแว้งเครือ",
+        "part": "ใบ, ลูก",
+        "props": "ไอ น้ำลายเหนียว เสมหะ บำรุงธาตุ",
+        "group": "เครือ 2 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2014/05/มะแว้งเครือ.jpg"
+      },
+      {
+        "name": "สะเดา",
+        "part": "เปลือกต้น",
+        "props": "รสขมฝาดเย็น — บิดมูกเลือด",
+        "group": "สะเดา",
+        "image": "https://medthai.com/wp-content/uploads/2013/11/สะเดา.jpg"
+      },
+      {
+        "name": "ดีสัตว์ต่าง ๆ",
+        "part": "ดี (จากสัตว์)",
+        "props": "ขับยาให้เล่นเร็ว บำรุงน้ำดี และโลหิต",
+        "group": "ดี"
+      }
+    ]
+  },
+  {
+    "id": "spicy",
+    "name": "รสเผ็ดร้อน",
+    "color": "bg-red-100",
+    "textColor": "text-red-800",
+    "badgeClass": "bg-red-500 text-white",
+    "properties": "แก้โรคลมจุกเสียด ขับลมให้ผายหรือเรอ บำรุงเตโชธาตุ (ธาตุไฟ) ขับเหงื่อ ช่วยย่อยอาหาร",
+    "contraindications": "โรคไข้ตัวร้อน เพ้อคลั่ง",
+    "herbs": [
+      {
+        "name": "จันทน์เทศ",
+        "part": "ลูก",
+        "props": "ธาตุพิการ ปวดท้อง ชูไฟธาตุ เจริญอาหาร รัดมดลูก",
+        "group": "ลูก 2 อย่าง",
+        "image": "herbimg/จันทน์เทศ.jpg"
+      },
+      {
+        "name": "กระวาน",
+        "part": "ลูก",
+        "props": "กระจายเสมหะ โลหิต แก้ปวดท้อง แก้จุกเสียด ขับลมในท้อง",
+        "group": "ลูก 2 อย่าง"
+      },
+      {
+        "name": "เต่าเกียด",
+        "part": "หัว",
+        "props": "ตับปอดพิการ ตับทรุด ฟอกเสมหะ",
+        "group": "หัว 2 อย่าง",
+        "image": "herbimg/เต่าเกียด.jpg"
+      },
+      {
+        "name": "กระชาย",
+        "part": "หัว",
+        "props": "มุตกิด โรคในปาก ลมอันเกิดแต่กองหทัยวาตะ",
+        "group": "หัว 2 อย่าง",
+        "image": "herbimg/กระชาย.jpg"
+      },
+      {
+        "name": "พริกหอม",
+        "part": "ผล/เมล็ด",
+        "props": "ขับลมในกระเพาะอาหาร และลำไส้",
+        "group": "พริก 2 อย่าง"
+      },
+      {
+        "name": "พริกหาง",
+        "part": "ผล/เมล็ด",
+        "props": "บำรุงธาตุ แก้ปวดท้อง ขับลม ขับปัสสาวะ ขับหนอง",
+        "group": "พริก 2 อย่าง"
+      },
+      {
+        "name": "ดอกจันทน์",
+        "part": "ดอก",
+        "props": "ปวดท้อง ธาตุพิการ ชูไฟธาตุ เจริญอาหาร รัดมดลูก",
+        "group": "ดอก-ราก-กานพลู",
+        "image": "herbimg/ดอกจันทน์.jpg"
+      },
+      {
+        "name": "พาดไฉน",
+        "part": "ราก",
+        "props": "เสมหะ ขับลมผาย",
+        "group": "ดอก-ราก-กานพลู"
+      },
+      {
+        "name": "กานพลู",
+        "part": "ดอกตูม",
+        "props": "เสมหะอันเกิดในกองโลหิต รัตตะปิตตะโรค ปวดท้อง รำมะนาด กระจายลม ขับทำให้อาหารงวด",
+        "group": "ดอก-ราก-กานพลู",
+        "image": "herbimg/กานพลู.jpg"
+      },
+      {
+        "name": "ขิงแห้ง",
+        "part": "เหง้า",
+        "props": "รสเผ็ดร้อนหวาน — พรรดึก จุกเสียด ไข้ตรีโทษ กระจายลม ขับเหงื่อ",
+        "group": "ขิง",
+        "image": "herbimg/ขิงแห้ง.jpg"
+      }
+    ]
+  },
+  {
+    "id": "nutty",
+    "name": "รสมัน",
+    "color": "bg-amber-100",
+    "textColor": "text-amber-800",
+    "badgeClass": "bg-amber-500 text-white",
+    "properties": "ซึมซาบไปตามเส้นเอ็น แก้เส้นเอ็นพิการ บำรุงเส้นเอ็น แก้ปวดเมื่อย บำรุงไขข้อ บำรุงเยื่อกระดูก เป็นยาอายุวัฒนะ ให้ความอบอุ่นแก่ร่างกาย",
+    "contraindications": "โรคเสมหะพิการ เช่น ไอ หอบ บิด และไข้ต่าง ๆ ร้อนในกระหายน้ำ",
+    "herbs": [
+      {
+        "name": "งา (ดำ/ขาว)",
+        "part": "เมล็ด",
+        "props": "เส้นเอ็น แก้เมื่อย บำรุงกำลัง บำรุงไขมัน",
+        "group": "เมล็ด 5 อย่าง",
+        "image": "herbimg/งาดำขาว.jpg"
+      },
+      {
+        "name": "ถั่วเขียว",
+        "part": "เมล็ด",
+        "props": "ร้อนภายใน ขัดข้อ บำรุงเนื้อและกระดูก บำรุงกำลัง",
+        "group": "เมล็ด 5 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2013/10/ถั่วเขียว1.jpg"
+      },
+      {
+        "name": "ถั่วลันเตา",
+        "part": "เมล็ด",
+        "props": "ตับพิการ และม้ามย้อย บำรุงกำลัง",
+        "group": "เมล็ด 5 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2013/10/ถั่วลันเตา1.jpg"
+      },
+      {
+        "name": "ถั่วลิสง",
+        "part": "เมล็ด",
+        "props": "บำรุงไขมัน เส้นเอ็น กำลัง ขับผายลม",
+        "group": "เมล็ด 5 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2013/10/ถั่วลิสง.jpg"
+      },
+      {
+        "name": "มะม่วงหิมพานต์",
+        "part": "เมล็ด",
+        "props": "โรคผิวหนัง ทำลายตุ่มตาปลา",
+        "group": "เมล็ด 5 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2013/08/มะม่วงหิมพานต์.jpg"
+      },
+      {
+        "name": "แห้ว",
+        "part": "หัว",
+        "props": "บำรุงกำลัง ครรภ์ ธาตุ เป็นยาอายุวัฒนะ",
+        "group": "หัว 2 อย่าง",
+        "image": "herbimg/แห้ว.jpg"
+      },
+      {
+        "name": "ถั่วพู",
+        "part": "หัว",
+        "props": "ไข้ น้ำดีพิการ บำรุงกำลัง",
+        "group": "หัว 2 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2013/10/ถั่วพู.jpg"
+      },
+      {
+        "name": "น้ำนมแพะ",
+        "part": "น้ำนม",
+        "props": "จุกเสียด หืดไอ บำรุงธาตุไฟ กำลัง",
+        "group": "นม เลือด แก่น"
+      },
+      {
+        "name": "เลือดแรด",
+        "part": "เลือด",
+        "props": "รสมันคาว — ช้ำใน กระจายโลหิต บำรุงโลหิต",
+        "group": "นม เลือด แก่น"
+      },
+      {
+        "name": "กันเกรา",
+        "part": "แก่นไม้",
+        "props": "ปวดเมื่อย บำรุงไขข้อ เป็นยาอายุวัฒนะ",
+        "group": "นม เลือด แก่น",
+        "image": "https://medthai.com/wp-content/uploads/2013/08/กันเกรา.jpg"
+      }
+    ]
+  },
+  {
+    "id": "fragrant",
+    "name": "รสหอมเย็น",
+    "color": "bg-cyan-100",
+    "textColor": "text-cyan-800",
+    "badgeClass": "bg-cyan-500 text-white",
+    "properties": "บำรุงหัวใจ ตับ ปอด บำรุงครรภ์ อ่อนเพลีย ชูกำลัง กระหายน้ำ ดับพิษร้อน",
+    "contraindications": "โรคลมจุกเสียดแน่น ลมป่วง",
+    "herbs": [
+      {
+        "name": "เกสรดอกไม้ (ทั้ง 5)",
+        "part": "เกสร",
+        "props": "ร้อนในกระหายน้ำ ไข้จับ ไข้เพื่อลม ให้เจริญอาหาร โรคตา บำรุงหัวใจ",
+        "group": "เกสรทั้ง 5",
+        "image": "herbimg/เกสรดอกไม้ทั้ง5.jpg"
+      },
+      {
+        "name": "กฤษณา",
+        "part": "เนื้อไม้",
+        "props": "ไข้ บำรุงหัวใจ ตับ ปอด",
+        "group": "ไม้หอม 3 อย่าง",
+        "image": "herbimg/กฤษณา.jpg"
+      },
+      {
+        "name": "กระลำพัก",
+        "part": "เนื้อไม้",
+        "props": "พิษเสมหะ โลหิต ธาตุพิการ บำรุงตับ ปอด หัวใจ",
+        "group": "ไม้หอม 3 อย่าง",
+        "image": "herbimg/กระลำพัก.jpg"
+      },
+      {
+        "name": "ขอนดอก",
+        "part": "เนื้อไม้",
+        "props": "ไข้เพื่อตรีโทษ บำรุงตับ ปอด หัวใจ ครรภ์รักษา",
+        "group": "ไม้หอม 3 อย่าง",
+        "image": "herbimg/ขอนดอก.jpg"
+      },
+      {
+        "name": "แฝกหอม",
+        "part": "ราก",
+        "props": "ไข้เพื่อดี บำรุงหัวใจ",
+        "group": "ราก 2 อย่าง",
+        "image": "herbimg/แฝกหอม.jpg"
+      },
+      {
+        "name": "ชะลูด",
+        "part": "ราก",
+        "props": "ไข้อ่อนเพลีย ลมบาดทะจิต",
+        "group": "ราก 2 อย่าง",
+        "image": "herbimg/ชะลูด.jpg"
+      },
+      {
+        "name": "เตยหอม",
+        "part": "ต้น",
+        "props": "บำรุงหัวใจ ขับปัสสาวะ",
+        "group": "เตย ดอกไม้ ฝรั่น พิมเสน"
+      },
+      {
+        "name": "ดอกไม้เทศ",
+        "part": "ดอก",
+        "props": "บำรุงหัวใจให้ผ่องใส",
+        "group": "เตย ดอกไม้ ฝรั่น พิมเสน"
+      },
+      {
+        "name": "หญ้าฝรั่น",
+        "part": "เกสรดอก",
+        "props": "ชูกำลัง บำรุงหัวใจ ทำให้ชื่นใจ",
+        "group": "เตย ดอกไม้ ฝรั่น พิมเสน",
+        "image": "https://medthai.com/wp-content/uploads/2013/10/หญ้าฝรั่น1.jpg"
+      },
+      {
+        "name": "พิมเสนในปล้องไม้ไผ่",
+        "part": "ผลึก",
+        "props": "เสมหะ ลม หอบ หืด โรคตา",
+        "group": "เตย ดอกไม้ ฝรั่น พิมเสน"
+      }
+    ]
+  },
+  {
+    "id": "salty",
+    "name": "รสเค็ม",
+    "color": "bg-indigo-100",
+    "textColor": "text-indigo-800",
+    "badgeClass": "bg-indigo-500 text-white",
+    "properties": "ซึมซาบไปตามผิวหนัง แก้โรคผิวหนัง โรคพรรดึก ถ่ายชำระน้ำเหลือง ชำระเมือกมันในลำไส้ ฟอกโลหิต แก้เสมหะเหนียว",
+    "contraindications": "อุจจาระธาตุพิการ โรคบิดมูกเลือด กระเพาะอาหารเป็นแผล",
+    "herbs": [
+      {
+        "name": "ลำพู",
+        "part": "เปลือกต้น",
+        "props": "โรคผิวหนัง แผลเปื่อย",
+        "group": "เปลือก 3 อย่าง"
+      },
+      {
+        "name": "ตะบูน",
+        "part": "เปลือกต้น",
+        "props": "บิด ท้องร่วง สมาน แก้ไอ",
+        "group": "เปลือก 3 อย่าง"
+      },
+      {
+        "name": "มะเกลือ",
+        "part": "เปลือกต้น",
+        "props": "กษัย พยาธิ ตานซาง",
+        "group": "เปลือก 3 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2013/09/มะเกลือ.jpg"
+      },
+      {
+        "name": "กระชาย",
+        "part": "ใบ",
+        "props": "โรคในปาก ลำคอ โลหิต",
+        "group": "ใบ 2 อย่าง",
+        "image": "herbimg/กระชาย.jpg"
+      },
+      {
+        "name": "หอมแดง",
+        "part": "ใบ",
+        "props": "ไข้หวัด โรคตา ฟกบวมซ้ำ",
+        "group": "ใบ 2 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2013/07/Shallot-1.jpg"
+      },
+      {
+        "name": "โคกกระสุน",
+        "part": "ทั้งต้น",
+        "props": "ไตพิการ ขับปัสสาวะ ขับมุตกิด",
+        "group": "กลุ่มขับปัสสาวะ",
+        "image": "https://medthai.com/wp-content/uploads/2015/01/หนามกระสุน.jpg"
+      },
+      {
+        "name": "ดินประสิว",
+        "part": "ธาตุ",
+        "props": "ถอนพิษ ขับปัสสาวะ ขับลมในเส้น",
+        "group": "กลุ่มขับปัสสาวะ"
+      },
+      {
+        "name": "เกลือ (ทั้ง 5)",
+        "part": "ธาตุ",
+        "props": "ไข้พรรดึก ท้องมาน เสมหะ บิดมูกเลือด บำรุงน้ำเหลือง",
+        "group": "เกลือ-ทะเล-หอย"
+      },
+      {
+        "name": "แสมทะเล",
+        "part": "แก่นไม้",
+        "props": "กษัย ขับโลหิต น้ำคาวปลา ขับลม",
+        "group": "เกลือ-ทะเล-หอย",
+        "image": "herbimg/แสมทะเล.jpg"
+      },
+      {
+        "name": "หอยจืด (เผา)",
+        "part": "เปลือกหอยเผา",
+        "props": "รสเค็มกร่อย — โรคกษัย ไตพิการ ขับลมในลำไส้ ชะล้างลำไส้ ขับปัสสาวะ นิ่ว บำรุงกระดูก",
+        "group": "เกลือ-ทะเล-หอย"
+      }
+    ]
+  },
+  {
+    "id": "sour",
+    "name": "รสเปรี้ยว",
+    "color": "bg-lime-100",
+    "textColor": "text-lime-800",
+    "badgeClass": "bg-lime-500 text-white",
+    "properties": "แก้เสมหะพิการ เหนียว ไอ กระหายน้ำ ท้องผูก ระบายอุจจาระ ฟอกโลหิต",
+    "contraindications": "โรคน้ำเหลืองเสีย ท้องเสีย และไข้ต่าง ๆ",
+    "herbs": [
+      {
+        "name": "ส้มป่อย",
+        "part": "ใบ",
+        "props": "ชำระล้างเสมหะในลำไส้ ฟอกโลหิต",
+        "group": "ใบ 5 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2014/07/ส้มป่อย.jpg"
+      },
+      {
+        "name": "โทงเทง",
+        "part": "ใบ",
+        "props": "เจ็บคอ ฝีในคอ น้ำลายพิการ",
+        "group": "ใบ 5 อย่าง"
+      },
+      {
+        "name": "มะขาม",
+        "part": "ใบ",
+        "props": "คูถเสมหะ ฟอกโลหิต",
+        "group": "ใบ 5 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2013/07/Tamarind-1.jpg"
+      },
+      {
+        "name": "ส้มเปรี้ยว",
+        "part": "ใบ",
+        "props": "เสมหะ ฟอกโลหิตสตรี",
+        "group": "ใบ 5 อย่าง"
+      },
+      {
+        "name": "มะยม",
+        "part": "ใบ",
+        "props": "เสมหะ ถอนพิษ ไข้เพื่อเสมหะ",
+        "group": "ใบ 5 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2013/07/Star-Gooseberry-1.jpg"
+      },
+      {
+        "name": "มะดัน",
+        "part": "ลูก",
+        "props": "ล้างเสมหะ ฟอกโลหิต",
+        "group": "ลูก 4 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2013/07/มะดัน.jpg"
+      },
+      {
+        "name": "มะเขือขื่น",
+        "part": "ลูก",
+        "props": "ขับเสมหะ แก้น้ำลายเหนียว",
+        "group": "ลูก 4 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2014/09/ผลมะเขือขื่น.jpg"
+      },
+      {
+        "name": "มะอึก",
+        "part": "ลูก",
+        "props": "ไอ น้ำลายเหนียว ขับเสมหะ",
+        "group": "ลูก 4 อย่าง",
+        "image": "https://medthai.com/wp-content/uploads/2013/09/มะอึก.jpg"
+      },
+      {
+        "name": "มะนาว มะกรูด ส้มซ่า",
+        "part": "ผล/น้ำ",
+        "props": "กัดเสมหะ แก้ลม ฟอกโลหิต",
+        "group": "ลูก 4 อย่าง"
+      },
+      {
+        "name": "มะกล่ำ (แดง/ขาว)",
+        "part": "ราก",
+        "props": "ศอเสมหะ ลมในลำไส้ บำรุงเสียง",
+        "group": "ราก 1 อย่าง"
+      }
+    ]
+  },
+  {
+    "id": "bland",
+    "name": "รสจืด",
+    "color": "bg-gray-200",
+    "textColor": "text-gray-800",
+    "badgeClass": "bg-gray-500 text-white",
+    "properties": "แก้เสมหะ ขับปัสสาวะ ดับพิษไข้ ดับพิษปวดร้อน แก้ทางเตโชธาตุ",
+    "contraindications": "ไม่แสลงกับโรคใด (ใช้ร่วมกับยาอื่นได้กว้างขวาง)",
+    "herbs": [
+      {
+        "name": "แตงหนู",
+        "part": "ราก",
+        "props": "เสมหะ ปัสสาวะพิการ",
+        "group": "ราก 4 อย่าง"
+      },
+      {
+        "name": "ไทรย้อย",
+        "part": "ราก",
+        "props": "กษัย ไตพิการ ขับปัสสาวะ",
+        "group": "ราก 4 อย่าง"
+      },
+      {
+        "name": "ต่อไส้",
+        "part": "ราก",
+        "props": "ปัสสาวะ ไตพิการ",
+        "group": "ราก 4 อย่าง"
+      },
+      {
+        "name": "ไม้ไผ่ป่า",
+        "part": "ตา/ราก",
+        "props": "ไตพิการ ขับปัสสาวะ",
+        "group": "ราก 4 อย่าง"
+      },
+      {
+        "name": "ขลู่",
+        "part": "ต้น",
+        "props": "กษัยกล่อน ปัสสาวะพิการ",
+        "group": "ต้น 2 อย่าง"
+      },
+      {
+        "name": "ผักกาดน้ำ",
+        "part": "ต้น",
+        "props": "แก้ช้ำรั่ว ขับปัสสาวะ",
+        "group": "ต้น 2 อย่าง"
+      },
+      {
+        "name": "ตะไคร้น้ำ (ตะไคร้หางนาค)",
+        "part": "ต้น",
+        "props": "ช้ำรั่ว กษัยกล่อน ขับปัสสาวะ",
+        "group": "ตะไคร้น้ำ-หญ้า"
+      },
+      {
+        "name": "หญ้าถอดปล้อง",
+        "part": "ต้น",
+        "props": "แก้มุตกิด ขับปัสสาวะ",
+        "group": "ตะไคร้น้ำ-หญ้า"
+      },
+      {
+        "name": "ตำลึง",
+        "part": "เถา",
+        "props": "รสจืดเย็น — ไข้ที่มีพิษ โรคตา ดับพิษร้อน ถอนพิษไข้",
+        "group": "ตำลึง-ปรู",
+        "image": "https://medthai.com/wp-content/uploads/2013/07/Ivy-Gourd-1.jpg"
+      },
+      {
+        "name": "ปรู (แส้ม้าทลาย)",
+        "part": "แก่นไม้",
+        "props": "น้ำเหลืองเสีย พิษประดง เสมหะพิการ",
+        "group": "ตำลึง-ปรู",
+        "image": "herbimg/ปรูแส้ม้าทลาย.jpg"
+      }
+    ]
+  }
+];
+// --- STREAMING_CHUNK:DOM Element Selection ---
+    const tasteNav = document.getElementById('taste-nav');
+    const tasteContent = document.getElementById('taste-content');
+    
+    // Modal elements
+    const herbModal = document.getElementById('herb-modal');
+    const modalPanel = document.getElementById('modal-panel');
+    const modalOverlay = document.getElementById('modal-overlay');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const closeModalTop = document.getElementById('close-modal-top');
+    
+    const modalTitle = document.getElementById('modal-title');
+    const modalPart = document.getElementById('modal-part');
+    const modalImage = document.getElementById('modal-image');
+    const modalTaste = document.getElementById('modal-taste');
+    const modalProperties = document.getElementById('modal-properties');
+
+    // Tab elements
+    const tabBtnTheory = document.getElementById('tab-btn-theory');
+    const tabBtnHerbs = document.getElementById('tab-btn-herbs');
+    const sectionTheory = document.getElementById('section-theory');
+    const sectionHerbs = document.getElementById('section-herbs');
+
+    // --- รูปประกอบอัตโนมัติ (SVG ชื่อสมุนไพร สีตามรสยา) ---
+    const TASTE_HEX = { astringent:'#9a3412', sweet:'#9d174d', intoxicating:'#6b21a8', bitter:'#166534', spicy:'#991b1b', nutty:'#92400e', fragrant:'#155e75', salty:'#3730a3', sour:'#3f6212', bland:'#374151' };
+    const TASTE_BG  = { astringent:'#ffedd5', sweet:'#fdf2f8', intoxicating:'#f3e8ff', bitter:'#f0fdf4', spicy:'#fef2f2', nutty:'#fffbeb', fragrant:'#ecfeff', salty:'#eef2ff', sour:'#f7fee7', bland:'#f3f4f6' };
+    function herbImg(herbName, tasteId) {
+        const hex = TASTE_HEX[tasteId] || '#166534';
+        const bg  = TASTE_BG[tasteId]  || '#f0fdf4';
+        const clean = String(herbName || '').replace(/[<>"&]/g, '');
+        const fs = clean.length <= 8 ? 42 : (clean.length <= 14 ? 32 : 26);
+        const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'>" +
+            "<rect width='600' height='400' fill='" + bg + "'/>" +
+            "<circle cx='300' cy='195' r='155' fill='" + hex + "' opacity='0.10'/>" +
+            "<text x='50%' y='50%' fill='" + hex + "' font-family='Sarabun, sans-serif' font-size='" + fs + "' font-weight='700' text-anchor='middle' dominant-baseline='middle'>" + clean + "</text></svg>";
+        return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+    }
+
+    let currentTasteId = null;
+
+    // --- STREAMING_CHUNK:Tab Event Listeners ---
+    tabBtnTheory.addEventListener('click', () => {
+        tabBtnTheory.classList.add('active');
+        tabBtnTheory.classList.remove('border-b', 'hover:bg-gray-50');
+        tabBtnHerbs.classList.remove('active');
+        tabBtnHerbs.classList.add('border-b', 'hover:bg-gray-50');
+        
+        sectionTheory.classList.remove('hidden');
+        sectionTheory.classList.add('block');
+        sectionHerbs.classList.remove('flex');
+        sectionHerbs.classList.add('hidden');
+    });
+
+    tabBtnHerbs.addEventListener('click', () => {
+        tabBtnHerbs.classList.add('active');
+        tabBtnHerbs.classList.remove('border-b', 'hover:bg-gray-50');
+        tabBtnTheory.classList.remove('active');
+        tabBtnTheory.classList.add('border-b', 'hover:bg-gray-50');
+        
+        sectionTheory.classList.add('hidden');
+        sectionTheory.classList.remove('block');
+        sectionHerbs.classList.remove('hidden');
+        sectionHerbs.classList.add('flex');
+        
+        // Render navigation if empty
+        if (tasteNav.childElementCount === 0) {
+            renderNavigation();
+        }
+    });
+
+    // --- STREAMING_CHUNK:Render Functions ---
+    function renderNavigation() {
+        tasteNav.innerHTML = '';
+        tastesData.forEach(taste => {
+            const btn = document.createElement('button');
+            btn.className = `taste-btn w-full text-left px-4 py-3 rounded-lg border font-semibold transition-all duration-200 flex justify-between items-center`;
+            btn.dataset.id = taste.id;
+            
+            const dotColor = taste.badgeClass.split(' ')[0];
+            
+            btn.innerHTML = `
+                <span class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full ${dotColor}"></span>
+                    ${taste.name}
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            `;
+            
+            btn.onclick = () => selectTaste(taste.id);
+            tasteNav.appendChild(btn);
+        });
+    }
+
+    function selectTaste(id) {
+        currentTasteId = id;
+        
+        // Update active button styling
+        document.querySelectorAll('.taste-btn').forEach(btn => {
+            if (btn.dataset.id === id) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+
+        const taste = tastesData.find(t => t.id === id);
+        renderTasteContent(taste);
+    }
+
+    function renderTasteContent(taste) {
+        let herbsHtml = '';
+        taste.herbs.forEach((herb, index) => {
+            herbsHtml += `
+                <div onclick="openModal('${taste.id}', ${index})" class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all cursor-pointer transform hover:-translate-y-1">
+                    <div class="h-40 bg-gray-200 relative overflow-hidden group">
+                        <img src="${herb.image || herbImg(herb.name, taste.id)}" alt="${herb.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-10 group-hover:bg-opacity-0 transition-all"></div>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-lg text-gray-800">${herb.name}</h4>
+                        <p class="text-sm text-gray-500 mt-1">ส่วนที่ใช้: ${herb.part}</p>
+                        <span class="inline-block mt-2 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full ${taste.color} ${taste.textColor}">${herb.group}</span>
+                        <div class="mt-3 text-sm text-blue-600 font-medium flex items-center justify-center">
+                            ดูรายละเอียด <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+
+        tasteContent.innerHTML = `
+            <div class="animate-fade-in">
+                <div class="${taste.color} p-6 rounded-xl border border-gray-100 mb-8 shadow-inner relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="${taste.badgeClass} px-3 py-1 rounded-full text-sm font-bold tracking-wider">หมวดหมู่</span>
+                            <h2 class="text-3xl font-bold ${taste.textColor}">${taste.name}</h2>
+                        </div>
+                        
+                        <div class="bg-white/80 backdrop-blur-sm p-4 rounded-lg mb-4 shadow-sm border border-white/50">
+                            <strong class="text-gray-900 block mb-1">สรรพคุณหลัก:</strong>
+                            <p class="text-gray-700 leading-relaxed">${taste.properties}</p>
+                        </div>
+                        
+                        <div class="bg-red-50/90 backdrop-blur-sm border-l-4 border-red-500 p-4 rounded-r-lg shadow-sm">
+                            <strong class="text-red-800 block mb-1 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                  <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                </svg>
+                                ข้อควรระวัง / แสลงกับโรค:
+                            </strong>
+                            <p class="text-red-700">${taste.contraindications}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                    </svg>
+                    ตัวอย่างสมุนไพร ${taste.name}
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pb-4">
+                    ${herbsHtml}
+                </div>
+            </div>
+        `;
+    }
+
+    // --- STREAMING_CHUNK:Modal Control Logic ---
+    function openModal(tasteId, herbIndex) {
+        const taste = tastesData.find(t => t.id === tasteId);
+        const herb = taste.herbs[herbIndex];
+
+        // Populate data
+        modalTitle.textContent = herb.name;
+        modalPart.textContent = 'ส่วนที่ใช้: ' + herb.part;
+        modalProperties.textContent = herb.props;
+        modalImage.src = herb.image || herbImg(herb.name, taste.id);
+        
+        modalTaste.textContent = taste.name;
+        modalTaste.className = `inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 ${taste.badgeClass}`;
+
+        // Show modal
+        herbModal.classList.remove('hidden');
+        
+        // Trigger animation
+        setTimeout(() => {
+            modalOverlay.classList.remove('opacity-0');
+            modalOverlay.classList.add('opacity-100');
+            modalPanel.classList.add('modal-enter-active');
+        }, 10);
+    }
+
+    function closeModal() {
+        modalOverlay.classList.remove('opacity-100');
+        modalOverlay.classList.add('opacity-0');
+        modalPanel.classList.remove('modal-enter-active');
+        
+        setTimeout(() => {
+            herbModal.classList.add('hidden');
+        }, 300);
+    }
+
+    // Attach Event Listeners
+    closeModalBtn.addEventListener('click', closeModal);
+    closeModalTop.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', closeModal);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !herbModal.classList.contains('hidden')) {
+            closeModal();
+        }
+    });
+
+</script>
+</body>
+</html>
